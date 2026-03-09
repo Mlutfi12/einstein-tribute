@@ -1,0 +1,94 @@
+{
+  "quotes": [
+    {
+      "id": "q-001",
+      "text": "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.",
+      "source": "Interview with George Sylvester Viereck",
+      "publication": "The Saturday Evening Post",
+      "date": "1929-10-26",
+      "year": 1929,
+      "category": "philosophy",
+      "tags": ["imagination", "knowledge", "creativity"],
+      "verified": true,
+      "featured": true,
+      "favorites": 1247
+    },
+    {
+      "id": "q-002",
+      "text": "The important thing is not to stop questioning. Curiosity has its own reason for existing.",
+      "source": "Life Magazine",
+      "date": "1955-05-02",
+      "year": 1955,
+      "category": "science",
+      "tags": ["curiosity", "questioning", "learning"],
+      "verified": true,
+      "featured": true,
+      "favorites": 892
+    },
+    {
+      "id": "q-003",
+      "text": "Try not to become a man of success, but rather try to become a man of value.",
+      "source": "Life Magazine",
+      "date": "1955-05-02",
+      "year": 1955,
+      "category": "life",
+      "tags": ["success", "values", "character"],
+      "verified": true,
+      "featured": true,
+      "favorites": 756
+    },
+    {
+      "id": "q-004",
+      "text": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+      "source": "Letter to his son Eduard",
+      "date": "1930-02-05",
+      "year": 1930,
+      "category": "life",
+      "tags": ["perseverance", "balance", "motion"],
+      "verified": true,
+      "featured": false,
+      "favorites": 634
+    },
+    {
+      "id": "q-005",
+      "text": "Logic will get you from A to B. Imagination will take you everywhere.",
+      "source": "Attributed",
+      "category": "philosophy",
+      "tags": ["logic", "imagination", "creativity"],
+      "verified": false,
+      "featured": false,
+      "favorites": 521
+    },
+    {
+      "id": "q-006",
+      "text": "A person who never made a mistake never tried anything new.",
+      "source": "Attributed",
+      "category": "education",
+      "tags": ["mistakes", "learning", "innovation"],
+      "verified": false,
+      "featured": false,
+      "favorites": 489
+    },
+    {
+      "id": "q-007",
+      "text": "Science without religion is lame, religion without science is blind.",
+      "source": "Science, Philosophy and Religion Symposium",
+      "year": 1941,
+      "category": "philosophy",
+      "tags": ["science", "religion", "philosophy"],
+      "verified": true,
+      "featured": false,
+      "favorites": 412
+    },
+    {
+      "id": "q-008",
+      "text": "The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.",
+      "source": "Attributed",
+      "category": "philosophy",
+      "tags": ["thinking", "change", "perspective"],
+      "verified": false,
+      "featured": false,
+      "favorites": 378
+    }
+  ]
+}

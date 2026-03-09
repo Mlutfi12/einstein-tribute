@@ -1,0 +1,114 @@
+{
+  "events": [
+    {
+      "id": "evt-001",
+      "year": 1879,
+      "month": 3,
+      "day": 14,
+      "title": "Birth in Ulm",
+      "description": "Albert Einstein was born in Ulm, in the Kingdom of Württemberg in the German Empire, to Hermann Einstein and Pauline Koch.",
+      "type": "personal",
+      "location": "Ulm, Kingdom of Württemberg",
+      "imageUrl": "/images/timeline/birth.jpg",
+      "imageCaption": "Einstein's birthplace in Ulm",
+      "sources": ["Einstein Archives"],
+      "order": 1
+    },
+    {
+      "id": "evt-002",
+      "year": 1896,
+      "title": "ETH Zurich Enrollment",
+      "description": "Einstein renounced his German citizenship and enrolled at the Swiss Federal Polytechnic School (ETH) in Zurich to train as a physics and mathematics teacher.",
+      "type": "professional",
+      "location": "Zurich, Switzerland",
+      "sources": ["ETH Archives"],
+      "order": 2
+    },
+    {
+      "id": "evt-003",
+      "year": 1905,
+      "title": "Annus Mirabilis - Miracle Year",
+      "description": "Einstein published four groundbreaking papers: on the photoelectric effect, Brownian motion, special relativity, and mass-energy equivalence (E=mc²).",
+      "type": "scientific",
+      "location": "Bern, Switzerland",
+      "imageUrl": "/images/timeline/1905-papers.jpg",
+      "imageCaption": "The four papers that changed physics",
+      "sources": ["Annalen der Physik"],
+      "order": 3
+    },
+    {
+      "id": "evt-004",
+      "year": 1915,
+      "title": "General Relativity Completed",
+      "description": "Einstein completed the general theory of relativity, describing gravity as the curvature of spacetime caused by mass and energy.",
+      "type": "scientific",
+      "location": "Berlin, Germany",
+      "sources": ["Prussian Academy of Sciences"],
+      "order": 4
+    },
+    {
+      "id": "evt-005",
+      "year": 1919,
+      "month": 5,
+      "day": 29,
+      "title": "Eclipse Expedition Confirms Relativity",
+      "description": "Arthur Eddington's solar eclipse expedition confirmed Einstein's prediction of light bending, making him world-famous overnight.",
+      "type": "historical",
+      "location": "Príncipe Island, West Africa",
+      "imageUrl": "/images/timeline/eclipse-1919.jpg",
+      "imageCaption": "Eddington's eclipse expedition",
+      "sources": ["Royal Astronomical Society"],
+      "order": 5
+    },
+    {
+      "id": "evt-006",
+      "year": 1921,
+      "title": "Nobel Prize in Physics",
+      "description": "Einstein was awarded the Nobel Prize in Physics for his explanation of the photoelectric effect, which established quantum theory.",
+      "type": "professional",
+      "location": "Stockholm, Sweden",
+      "imageUrl": "/images/timeline/nobel-1921.jpg",
+      "imageCaption": "Einstein receiving the Nobel Prize",
+      "sources": ["Nobel Foundation"],
+      "order": 6
+    },
+    {
+      "id": "evt-007",
+      "year": 1933,
+      "title": "Emigration to America",
+      "description": "Einstein emigrated to the United States and joined the Institute for Advanced Study in Princeton, New Jersey, fleeing Nazi Germany.",
+      "type": "personal",
+      "location": "Princeton, New Jersey",
+      "sources": ["Institute for Advanced Study"],
+      "order": 7
+    },
+    {
+      "id": "evt-008",
+      "year": 1939,
+      "month": 8,
+      "day": 2,
+      "title": "Letter to President Roosevelt",
+      "description": "Einstein signed a letter to President Franklin D. Roosevelt warning about the potential development of atomic bombs, initiating the Manhattan Project.",
+      "type": "historical",
+      "location": "Peconic, New York",
+      "imageUrl": "/images/timeline/roosevelt-letter.jpg",
+      "imageCaption": "The Einstein-Szilárd letter",
+      "sources": ["National Archives"],
+      "order": 8
+    },
+    {
+      "id": "evt-009",
+      "year": 1955,
+      "month": 4,
+      "day": 18,
+      "title": "Death in Princeton",
+      "description": "Albert Einstein passed away at Princeton Hospital at age 76, leaving behind an unparalleled legacy in physics and human thought.",
+      "type": "personal",
+      "location": "Princeton, New Jersey",
+      "imageUrl": "/images/timeline/princeton-1955.jpg",
+      "imageCaption": "Einstein's final years at Princeton",
+      "sources": ["Princeton Hospital Records"],
+      "order": 9
+    }
+  ]
+}

@@ -26,6 +26,41 @@ const quotes = [
   { id: 10, quote: "In the middle of difficulty lies opportunity.", year: 1940, context: "Writings" }
 ];
 
+// Timeline events for the Journey Through Time section
+const timeline = [
+  { year: '1879', title: 'Born in Ulm', description: 'Albert Einstein is born on March 14 in Ulm, Kingdom of Württemberg, German Empire.', icon: '👶', side: 'left' },
+  { year: '1884', title: 'The Compass', description: "At age 5, Einstein receives a compass from his father, sparking his lifelong fascination with invisible forces.", icon: '🧭', side: 'right' },
+  { year: '1896', title: 'ETH Zurich', description: 'Enters the Swiss Federal Polytechnic School in Zurich to study mathematics and physics.', icon: '🎓', side: 'left' },
+  { year: '1902', title: 'Patent Office', description: 'Begins working as a technical examiner at the Swiss Patent Office in Bern.', icon: '📋', side: 'right' },
+  { year: '1905', title: 'Annus Mirabilis', description: 'The Miracle Year: Publishes four groundbreaking papers on photoelectric effect, Brownian motion, special relativity, and mass-energy equivalence (E=mc²).', icon: '💡', side: 'left' },
+  { year: '1915', title: 'General Relativity', description: 'Completes the general theory of relativity, revolutionizing our understanding of gravity.', icon: '🌌', side: 'right' },
+  { year: '1919', title: 'Fame Arrives', description: "British expedition confirms Einstein's prediction of light bending during a solar eclipse, making him world-famous.", icon: '🌟', side: 'left' },
+  { year: '1921', title: 'Nobel Prize', description: 'Awarded the Nobel Prize in Physics for his explanation of the photoelectric effect.', icon: '🏆', side: 'right' },
+  { year: '1933', title: 'Emigration to America', description: 'Flees Nazi Germany and accepts a position at the Institute for Advanced Study in Princeton, New Jersey.', icon: '✈️', side: 'left' },
+  { year: '1939', title: 'Letter to Roosevelt', description: "Signs the famous letter to President Roosevelt warning about Nazi Germany's potential atomic bomb development.", icon: '✉️', side: 'right' },
+  { year: '1945', title: 'Post-War Advocacy', description: 'Becomes a vocal advocate for nuclear disarmament and world government.', icon: '☮️', side: 'left' },
+  { year: '1955', title: 'Final Days', description: 'Albert Einstein passes away on April 18 in Princeton, New Jersey, at the age of 76.', icon: '⭐', side: 'right' }
+];
+
+// Gallery items for the Visual Legacy section
+const gallery = [
+  { id: 1, title: 'The Young Genius', description: 'Einstein in his early years at the Swiss Patent Office', icon: '👨\u200d💼', year: '1905' },
+  { id: 2, title: 'E = mc²', description: 'The equation that changed the world forever', icon: '⚛️', year: '1905' },
+  { id: 3, title: 'Nobel Laureate', description: 'Receiving the Nobel Prize in Physics', icon: '🏆', year: '1921' },
+  { id: 4, title: 'Princeton Years', description: 'At the Institute for Advanced Study', icon: '🎓', year: '1933' },
+  { id: 5, title: 'The Violinist', description: "Einstein's passion for music and the violin", icon: '🎻', year: '1940' },
+  { id: 6, title: 'Thought Experiments', description: 'Imagining riding on a beam of light', icon: '💭', year: '1905' },
+  { id: 7, title: 'Solar Eclipse', description: 'The 1919 expedition that proved relativity', icon: '🌑', year: '1919' },
+  { id: 8, title: 'Peace Advocate', description: 'Speaking out for nuclear disarmament', icon: '☮️', year: '1945' }
+];
+
+// Scientific contributions categories
+const contributionCategories = [
+  { title: 'Quantum Theory', description: 'Pioneered quantum mechanics through his work on the photoelectric effect', icon: '⚡' },
+  { title: 'Relativity', description: 'Unified space and time into the fabric of spacetime', icon: '🌌' },
+  { title: 'Cosmology', description: 'Laid the foundation for modern understanding of the universe', icon: '🔭' }
+];
+
 // Biography timeline
 const biography = [
   { year: 1879, event: "Born in Ulm, Germany", category: "birth" },
@@ -179,6 +214,53 @@ app.get('/api/contributions', (req, res) => {
   });
 });
 
+// GET /api/timeline - Get timeline events
+app.get('/api/timeline', (req, res) => {
+  const { side, startYear, endYear } = req.query;
+  
+  let result = timeline;
+  
+  if (side) {
+    result = result.filter(t => t.side === side);
+  }
+  
+  if (startYear) {
+    result = result.filter(t => parseInt(t.year) >= parseInt(startYear));
+  }
+  
+  if (endYear) {
+    result = result.filter(t => parseInt(t.year) <= parseInt(endYear));
+  }
+  
+  res.json({
+    success: true,
+    count: result.length,
+    data: result
+  });
+});
+
+// GET /api/gallery - Get gallery items
+app.get('/api/gallery', (req, res) => {
+  const { id, year } = req.query;
+  
+  let result = gallery;
+  
+  if (id) {
+    result = gallery.filter(g => g.id === parseInt(id));
+  }
+  
+  if (year) {
+    result = gallery.filter(g => g.year === year);
+  }
+  
+  res.json({
+    success: true,
+    count: result.length,
+    data: result,
+    categories: contributionCategories
+  });
+});
+
 // GET /health - Health check
 app.get('/health', (req, res) => {
   res.json({
@@ -196,6 +278,8 @@ app.get('/', (req, res) => {
     endpoints: {
       'GET /api/quotes': "Get Einstein's famous quotes",
       'GET /api/biography': 'Get biographical timeline',
+      'GET /api/timeline': 'Get journey through time events',
+      'GET /api/gallery': 'Get visual legacy gallery',
       'GET /api/contributions': 'Get scientific contributions',
       'GET /health': 'Health check'
     },
@@ -210,6 +294,8 @@ app.listen(PORT, () => {
   console.log(`📝 Endpoints:`);
   console.log(`   GET /api/quotes        - Einstein's famous quotes`);
   console.log(`   GET /api/biography     - Biographical timeline`);
+  console.log(`   GET /api/timeline      - Journey through time events`);
+  console.log(`   GET /api/gallery       - Visual legacy gallery`);
   console.log(`   GET /api/contributions - Scientific contributions`);
   console.log(`   GET /health            - Health check`);
 });

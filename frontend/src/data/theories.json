@@ -1,0 +1,156 @@
+{
+  "theories": [
+    {
+      "id": "special-relativity",
+      "title": "Special Theory of Relativity",
+      "year": 1905,
+      "summary": "Revolutionary theory describing the relationship between space and time for objects moving at constant speeds.",
+      "description": "Special relativity fundamentally changed our understanding of space and time. It introduced the concept that the laws of physics are the same for all observers in uniform motion, and that the speed of light is constant for all observers regardless of their motion. This led to remarkable conclusions about time dilation, length contraction, and the relativity of simultaneity.",
+      "keyConcepts": [
+        "Time dilation",
+        "Length contraction",
+        "Relativity of simultaneity",
+        "Mass-energy equivalence",
+        "Speed of light as cosmic speed limit"
+      ],
+      "equations": [
+        {
+          "latex": "E = mc^2",
+          "description": "Mass-energy equivalence",
+          "variables": [
+            { "symbol": "E", "name": "Energy", "description": "Total energy", "unit": "Joules" },
+            { "symbol": "m", "name": "Mass", "description": "Rest mass", "unit": "kilograms" },
+            { "symbol": "c", "name": "Speed of Light", "description": "299,792,458 m/s", "unit": "m/s" }
+          ]
+        },
+        {
+          "latex": "\\Delta t' = \\frac{\\Delta t}{\\sqrt{1 - \\frac{v^2}{c^2}}}",
+          "description": "Time dilation formula",
+          "variables": [
+            { "symbol": "Δt'", "name": "Dilated Time", "description": "Time measured by moving observer" },
+            { "symbol": "Δt", "name": "Proper Time", "description": "Time in rest frame" },
+            { "symbol": "v", "name": "Velocity", "description": "Relative velocity" },
+            { "symbol": "c", "name": "Speed of Light", "description": "Constant" }
+          ]
+        }
+      ],
+      "visualizations": ["time-dilation", "length-contraction", "emc2-calculator"],
+      "difficulty": "intermediate",
+      "readTime": 15
+    },
+    {
+      "id": "general-relativity",
+      "title": "General Theory of Relativity",
+      "year": 1915,
+      "summary": "Theory of gravitation describing gravity as the curvature of spacetime caused by mass and energy.",
+      "description": "General relativity extended special relativity to include gravity and acceleration. Einstein proposed that massive objects curve the fabric of spacetime, and what we perceive as gravity is actually objects following the straightest possible paths (geodesics) through this curved spacetime.",
+      "keyConcepts": [
+        "Spacetime curvature",
+        "Geodesics",
+        "Gravitational time dilation",
+        "Light bending",
+        "Black holes",
+        "Gravitational waves"
+      ],
+      "equations": [
+        {
+          "latex": "G_{\\mu\\nu} + \\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4} T_{\\mu\\nu}",
+          "description": "Einstein field equations",
+          "variables": [
+            { "symbol": "G_μν", "name": "Einstein Tensor", "description": "Spacetime curvature" },
+            { "symbol": "g_μν", "name": "Metric Tensor", "description": "Spacetime geometry" },
+            { "symbol": "T_μν", "name": "Stress-Energy Tensor", "description": "Matter and energy distribution" },
+            { "symbol": "Λ", "name": "Cosmological Constant", "description": "Dark energy term" }
+          ]
+        }
+      ],
+      "visualizations": ["spacetime-curvature", "gravity-well", "light-bending"],
+      "difficulty": "advanced",
+      "readTime": 20
+    },
+    {
+      "id": "photoelectric-effect",
+      "title": "Photoelectric Effect",
+      "year": 1905,
+      "summary": "Explanation of how light ejects electrons from metal surfaces, establishing the quantum nature of light.",
+      "description": "Einstein explained the photoelectric effect by proposing that light consists of discrete packets of energy called photons. This work was instrumental in establishing quantum theory and earned Einstein the Nobel Prize in Physics in 1921.",
+      "keyConcepts": [
+        "Photon theory of light",
+        "Work function",
+        "Quantum energy",
+        "Threshold frequency"
+      ],
+      "equations": [
+        {
+          "latex": "E = hf - \\phi",
+          "description": "Photoelectric equation",
+          "variables": [
+            { "symbol": "E", "name": "Kinetic Energy", "description": "Energy of ejected electron" },
+            { "symbol": "h", "name": "Planck Constant", "description": "6.626 × 10⁻³⁴ J·s" },
+            { "symbol": "f", "name": "Frequency", "description": "Light frequency" },
+            { "symbol": "φ", "name": "Work Function", "description": "Minimum energy to eject electron" }
+          ]
+        }
+      ],
+      "visualizations": ["photon-interaction"],
+      "difficulty": "intermediate",
+      "readTime": 12
+    },
+    {
+      "id": "brownian-motion",
+      "title": "Brownian Motion",
+      "year": 1905,
+      "summary": "Mathematical explanation of random particle motion, providing empirical evidence for the existence of atoms.",
+      "description": "Einstein's analysis of Brownian motion provided strong evidence for the atomic theory of matter. He showed that the random motion of particles suspended in fluid could be explained by collisions with individual molecules.",
+      "keyConcepts": [
+        "Atomic theory",
+        "Random walk",
+        "Diffusion",
+        "Molecular collisions"
+      ],
+      "equations": [
+        {
+          "latex": "\\langle x^2 \\rangle = 2Dt",
+          "description": "Mean squared displacement",
+          "variables": [
+            { "symbol": "⟨x²⟩", "name": "Mean Squared Displacement", "description": "Average squared distance" },
+            { "symbol": "D", "name": "Diffusion Coefficient", "description": "Rate of diffusion" },
+            { "symbol": "t", "name": "Time", "description": "Elapsed time" }
+          ]
+        }
+      ],
+      "visualizations": ["particle-simulation"],
+      "difficulty": "beginner",
+      "readTime": 10
+    },
+    {
+      "id": "bose-einstein-statistics",
+      "title": "Bose-Einstein Statistics",
+      "year": 1924,
+      "summary": "Quantum statistics for particles with integer spin, predicting the Bose-Einstein condensate.",
+      "description": "Working with Indian physicist Satyendra Nath Bose, Einstein developed quantum statistics for particles now called bosons. This work predicted the existence of Bose-Einstein condensates, a state of matter achieved at temperatures near absolute zero.",
+      "keyConcepts": [
+        "Bosons",
+        "Quantum statistics",
+        "Bose-Einstein condensate",
+        "Stimulated emission"
+      ],
+      "equations": [
+        {
+          "latex": "n_i = \\frac{1}{e^{(\\epsilon_i - \\mu)/kT} - 1}",
+          "description": "Bose-Einstein distribution",
+          "variables": [
+            { "symbol": "n_i", "name": "Occupation Number", "description": "Particles in state i" },
+            { "symbol": "ε_i", "name": "Energy", "description": "Energy of state i" },
+            { "symbol": "μ", "name": "Chemical Potential", "description": "Energy to add particle" },
+            { "symbol": "k", "name": "Boltzmann Constant", "description": "1.38 × 10⁻²³ J/K" },
+            { "symbol": "T", "name": "Temperature", "description": "Absolute temperature" }
+          ]
+        }
+      ],
+      "visualizations": ["condensate-visualization"],
+      "difficulty": "advanced",
+      "readTime": 18
+    }
+  ]
+}
